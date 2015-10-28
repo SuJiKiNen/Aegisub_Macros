@@ -44,7 +44,7 @@ function start_time_sort_all(subs)
 			table.insert(sel,i)
 		end
 	end
-	sort_sel(subs,sel)
+	start_time_sort_sel(subs,sel)
 end
 
 function end_time_sort_sel(subs,sel)
