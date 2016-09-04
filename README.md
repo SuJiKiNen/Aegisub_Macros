@@ -1,13 +1,14 @@
-Aegisub_Macros
-==============
+### ExportByActor
+Export filter by actor
 
-Aegisub macro scripts I've created
+### ExportByStyle
+Export filter by sytle
 
-styleSplitChan
--
+### KtagChanger
+Change k-timed line karaoke tag,like `\k->\kf` etc.
 
+### SelectByStyle
+Select parts of subtitles by style
 
-Furigana Stylize
--
-the script is use to generate independent style datas from per syllable and furigana,easy way to use furigana for other karaoke tools,the postions caculation are based on Aegisub karaskel.
-
+### StyleSplitChan
+Use it to split styledbilingual line(which mess up with \N in ASS dialogue line) to 2 lines with specific style
