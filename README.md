@@ -15,4 +15,4 @@ Change k-timed line karaoke tag,like `\k->\kf` etc.
 Select parts of subtitles by style.
 
 ### StyleSplitChan
-Use it to split styledbilingual line(which mess up with \N in ASS dialogue line) to 2 lines with specific style.
+Use it to split styled bilingual line(which mess up with \N in ASS dialogue line) to 2 lines with specific style.
