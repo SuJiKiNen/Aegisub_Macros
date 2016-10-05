@@ -42,14 +42,15 @@ romaji = (subs, sel) ->
 			dlm\waitForFinish -> true
 			if dl.error
 				aegisub.debug.out "error while downloading\n"
-			file = io.open save_path,"r"
-			html_str = file\read "*a"
-			file\close!
+			else
+				file = io.open save_path,"r"
+				html_str = file\read "*a"
+				file\close!
+				--<div id=src-translit class=translit dir=ltr style="text-align:;display:block">Nihon</div>
+				romaji_str = html_str\match "<div id=src%-translit.->(.-)</div>"
+				line.text = html.unescape romaji_str
+				subs[i] = line
 			
-			--<div id=src-translit class=translit dir=ltr style="text-align:;display:block">Nihon</div>
-			romaji_str = html_str\match "<div id=src%-translit.->(.-)</div>"
-			line.text = html.unescape romaji_str
-			subs[i] = line
 			aegisub.progress.set process_i*100/#sel
 		
 			
