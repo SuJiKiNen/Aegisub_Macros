@@ -2,7 +2,7 @@
 script_description = "Use it to Split Styled Bilingual line to 2 lines with specific style";
 script_author = "SuJiKiNen"
 script_version = "1.0"
-script_last_update_date = "2016/28/11"
+script_last_update_date = "2025/21/09"
 
 require "karaskel"
 require "re"
@@ -144,6 +144,7 @@ function SplitLine(subs,sel)
         end
 
         if SecondText then
+          SecondText = table.concat(SplitTextTable, " ", 2)
           if not SecondPartKeepTags then
             SecondText = TextTagsFilter(SecondText)
           end
